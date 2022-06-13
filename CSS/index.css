@@ -1,0 +1,626 @@
+header{
+    background-color: rgba(138, 135, 135, 0.24);
+    width: 100%;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    width: 100%;
+}
+footer{
+    background-color: rgba(138, 135, 135, 0.24);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    /*text-align: center;*/
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding: 0px;
+    list-style-type: none;
+    gap: 1.2rem; 
+}
+.menu-item{
+    border: 2px hidden black;
+    transition: all 0.5s ease;
+}
+.menu-item:hover{
+    background-color: rgba(243, 94, 94, 0.719);
+    padding: 3px 7px;
+    border-radius: 7px;
+} 
+.bienvenida{
+    text-align: center;
+    color: rgba(114, 114, 248, 0.89);
+}
+.banner-content{
+    margin: auto; 
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}
+.banner-slider{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.banner-slider-imagen{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    transition: ease-in-out 0.5s;
+    object-fit: cover;
+}
+.banner-slider-imagen:first-child{
+    opacity: 1;
+}
+.banner-slider-imagen:target {
+    opacity: 1;
+}
+.banner-menu{
+    text-align: center;
+    list-style-type: none;
+
+}
+.banner-menu-pasarimg {
+    display: inline-block;
+    color: rgb(114, 45, 45);
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+/*termina seccion de banner */
+/*comienza seccion notas home*/ 
+#Grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "img1 texto1"
+    "img2 texto2";
+}
+.nota-titulo{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2.5px solid brown;
+    color: rgb(10, 10, 10);
+}
+.nota{
+    grid-area: img1;
+}
+.nota2{
+    grid-area: img2;    
+}
+.nota-imagen2{
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 4px;
+    margin: 1rem;
+}
+.nota-texto-subtitulo2{
+    font-size: 15px;
+    border-bottom: 1.5px solid brown;
+    text-align: center;
+}
+.nota-texto1{
+    grid-area: texto1;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem;
+
+}
+.nota-texto2{
+    grid-area: texto2;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem;
+}
+.nota-imagen{
+    grid-area: nota-imagen;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 1rem;
+}
+.nota-texto-subtitulo1{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    border-bottom: 1.5px solid brown;
+}
+/*termina seccion notas*/
+/*acomodo footer*/
+.footer-texto{
+    display: flex;
+    justify-content: center;
+}
+.footer-copyrhigt{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-redes{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0px;
+    gap: 1rem;
+}
+.footer-iconos-redes{
+    display: inline-block;
+    border: 2px hidden rgb(156, 14, 14);
+}
+/*contacto*/
+.formulario{
+    font-size: 30px;
+    text-align: center;
+    background-image: url(../Img/Nosotros.jpg);
+    background-size: 100vw, 100vh;
+    background-attachment: fixed;
+}
+.formulario-contenido{
+    margin: auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.formulario-contenido-input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+.formulario-contenido-botones{
+    border-radius: 7px;
+    background: #8990f3e8;
+    font-size: 20px;
+}
+/*servicios*/
+.servicios-ofrecidos-1{
+    grid-area: crosfit;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-ofrecidos-2{
+    grid-area: gym;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-ofrecidos-3{
+    grid-area: funcional;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-ofrecidos-4{
+    grid-area: nutricion;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-ofrecidos-5{
+    grid-area: yoga;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-ofrecidos-6{
+    grid-area: personalizados;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black;
+}
+.servicios-titulo{
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    border-bottom: 2px solid brown;
+    font-size: 30px;
+}
+#servicios-ofrecidos{
+    width: 100%;
+    font-size: 20px;
+    display: grid;
+    grid-template-areas:
+    "crosfit gym"
+    "funcional nutricion"
+    "yoga personalizados";
+    box-sizing:border-box;
+    justify-content: space-around;
+}
+.servicios-ofrecidos-titulo{
+    text-align: center;
+    font-size: 14px;
+    color: darkgoldenrod;
+    border-bottom: 2px solid brown;
+}
+/*nosotros*/
+.mainnosotros{
+    background-color: rgba(233, 224, 128, 0.932);
+}
+.titulonosotros{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(112, 111, 111);
+    border-bottom: 2px solid rgba(177, 175, 175, 0.856);
+}
+#nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.nosotros-imagen{
+    width: 45%;
+    border: 2px solid black;
+    text-align: left;
+    padding: 4px;
+}
+.nosotros-texto{
+    font-size: 20px;
+    width: 45%;
+    border: 2px hidden black;
+    /*display: inline-block;*/
+    padding: 4px;
+}
+/*sedes*/
+.sedes{
+    display: grid;
+    grid-template-areas:    
+    "godoycruz ciudad"
+    "lujan maipu";
+    font-size: 20px;
+    text-align: center;
+}
+/*cuando hacen click en la sede que buscan queda remarcada y me direccionaria a una ubicacion*/
+.sedes-box1{
+    grid-area: godoycruz;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate;
+}
+.sedes-box1:hover{
+    background-color: rgba(243, 94, 94, 0.719);
+    padding: 3px 7px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.sedes-box2{
+    grid-area: ciudad;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate;
+}
+.sedes-box2:hover{
+    background-color: rgba(243, 94, 94, 0.719);
+    padding: 3px 7px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.sedes-box3{
+    grid-area: lujan;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate;
+}
+.sedes-box3:hover{
+    background-color: rgba(243, 94, 94, 0.719);
+    padding: 3px 7px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.sedes-box4{
+    grid-area: maipu;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate;
+}
+.sedes-box4:hover{
+    background-color: rgba(243, 94, 94, 0.719);
+    padding: 3px 7px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.sedes-box-titulos{
+    font-size: 15px;
+    color: brown;
+}
+.sede-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(114, 151, 114);
+    border-bottom: 2px solid slategray;
+}
+/*nutricion*/
+.mainnutri{
+    background-color: rgba(183, 223, 238, 0.548);
+    width: 100%;
+}
+.titulo{
+    font-size: 30px;
+    color: rgb(95, 93, 93);
+    text-align: center;
+}
+#tipsnutri{
+    display:grid;
+    grid-template-areas: 
+    "video formulario";
+    padding: 15px;
+    margin: 1rem;
+}
+.especialista{
+    grid-area: video;
+    padding: 10px;
+    margin: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.especialista-titulo{
+    color: brown;
+    border-bottom: 2px solid burlywood;
+}
+.especialista-video{
+    width: 400px;
+    height: 300px;
+    padding: 3px;
+    justify-content: center;
+}
+.formularionutri{
+    font-size: 20px;
+   grid-area: formulario;
+    margin: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.formularionutri-contenido{
+    margin: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: content-box;
+    border-radius: 10px;
+}
+.formularionutri-contenido-input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: content-box;
+    border: none;
+}
+.formularionutri-contenido-btn{
+    border-radius: 7px;
+    color: white;
+    background: rgba(202, 199, 199, 0.2);
+    font-size: 15px;
+}
+/*aplico media querys para todo el proyecto en mis puntos de quiebre*/
+@media screen and (max-width: 700px){
+    nav{
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       font-size: auto;
+    }
+    .menu{
+        gap: 0.6rem;
+        font-size: 8.5px;
+        justify-content: center;
+    }
+    header{
+        width: 100% ;
+    }
+    .servicios-titulo{
+        font-size: 15px;
+    }
+    #nosotros{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .nosotros-texto{
+        font-size: 15px;
+    }
+    .sedes-box1{
+        width: 100%;
+        padding: 2px;
+        margin: 7px;
+        box-sizing: border-box;
+    }
+    .sedes-box2{
+        width: 100%;
+        padding: 2px;
+        margin: 7px;
+        box-sizing: border-box;
+    }
+
+    .sedes-box3{
+        width: 100%;
+        padding: 2px;
+        margin: 7px;
+        box-sizing: border-box;
+    }
+
+    .sedes-box4{
+        width: 100%;
+        padding: 2px;
+        margin: 7px;
+        box-sizing: border-box;
+    }
+    .sedes-box-titulos{
+        font-size: 5px;
+        color: brown;
+    }
+    .sede-titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .sedes{
+        font-size: 12px;
+        width: 100%;
+        gap: 9px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    #Grid{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "img1"
+        "texto1"
+        "img2"
+        "texto2";
+    }
+    .nota-titulo {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 30px;
+        border-bottom: 2.5px solid brown;
+        color: rgb(10, 10, 10);
+    }
+    .nota{
+        grid-area: img1;
+        box-sizing: border-box;
+        width: 100%;
+     }
+    .nota2{
+        grid-area: img2;   
+        box-sizing: border-box; 
+    }
+    .nota-texto1{
+        grid-area: texto1;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;        
+    }
+    .nota-texto2{
+        grid-area: texto2;
+        font-size: 15px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;
+    }
+    .nota-imagen2{
+        box-sizing: border-box;
+        border: 3px solid black;
+        padding: 4px;
+        margin: 2px;
+        width: 300px;
+    }
+    .nota-imagen{
+        grid-area: nota-imagen;
+        border: 3px solid black;
+        box-sizing: border-box;
+        padding: 4px;
+        margin: 2px;
+        width: 300px;
+    }
+    .formularionutri-contenido{
+        margin: auto;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 2px;
+        box-sizing: content-box;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 1080px){
+    #tipsnutri {
+        display:grid;
+        grid-template-areas: 
+        "video"
+        "formulario";
+        padding: 7px;
+        margin: 0.6rem;
+    } 
+    .especialista {
+        grid-area: video;
+        padding: 10px;
+        margin: 4px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 20px;
+        width: 100%;
+    }
+    .especialista-video {
+        width: 100%;
+    }
+    .formularionutri {
+        font-size: 20px;
+        grid-area: formulario;
+        margin: 4px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 300px;
+    }/*ver nutri*/
+}
+@media screen and (max-width: 1000px){
+    .formulario{
+        font-size: 25px;
+        text-align: center;
+        background-image: url(../Img/Nosotros.jpg);
+        background-size: auto;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .formulario-contenido{
+        margin: auto;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}
