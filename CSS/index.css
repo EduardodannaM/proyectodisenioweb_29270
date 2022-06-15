@@ -31,7 +31,7 @@ nav{
     font-size: 15px;
     padding: 0px;
     list-style-type: none;
-    gap: 1.2rem; 
+    gap: 1.2rem;
 }
 .menu-item{
     border: 2px hidden black;
@@ -117,11 +117,19 @@ nav{
     border: 3px solid black;
     padding: 4px;
     margin: 1rem;
+    transition: transform .6s;
+}
+.nota-imagen2:hover{
+    transform: scaleX(1.01);
+}
+.nota-imagen:hover{
+    transform: scaleX(1.01);
 }
 .nota-texto-subtitulo2{
-    font-size: 15px;
+    font-size: 25px;
     border-bottom: 1.5px solid brown;
     text-align: center;
+    background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
 }
 .nota-texto1{
     grid-area: texto1;
@@ -143,12 +151,14 @@ nav{
     box-sizing: border-box;
     padding: 4px;
     margin: 1rem;
+    transition: transform .6s;
 }
 .nota-texto-subtitulo1{
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     color: black;
     border-bottom: 1.5px solid brown;
+    background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
 }
 /*termina seccion notas*/
 /*acomodo footer*/
