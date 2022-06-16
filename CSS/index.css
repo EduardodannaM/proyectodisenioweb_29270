@@ -647,8 +647,6 @@ textarea{
         text-align: center;
         background-image: url(../Img/Nosotros.jpg);
         background-size: auto;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
         width: 100%;
     }
     .formulario-contenido{
