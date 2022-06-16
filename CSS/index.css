@@ -398,10 +398,6 @@ textarea{
     border-bottom: 2px solid slategray;
 }
 /*nutricion*/
-.mainnutri{
-    background-color: rgba(183, 223, 238, 0.548);
-    width: 100%;
-}
 .titulo{
     font-size: 30px;
     color: rgb(95, 93, 93);
