@@ -23,7 +23,6 @@ nav{
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    /*text-align: center;*/
 }
 .menu{
     display: flex;
@@ -32,6 +31,8 @@ nav{
     padding: 0px;
     list-style-type: none;
     gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 0;
 }
 .menu-item{
     border: 2px hidden black;
@@ -42,6 +43,9 @@ nav{
     padding: 3px 7px;
     border-radius: 7px;
 } 
+.h2, h2 {
+        font-size: 20px;
+    }
 .bienvenida{
     text-align: center;
     color: rgba(114, 114, 248, 0.89);
@@ -66,6 +70,9 @@ nav{
     width: 100%;
     height: 300px;
     transition: ease-in-out 0.5s;
+    object-fit: cover;
+}
+.d-block {
     object-fit: cover;
 }
 .banner-slider-imagen:first-child{
@@ -453,6 +460,17 @@ textarea{
     background: rgba(202, 199, 199, 0.2);
     font-size: 15px;
 }
+.container-xl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 /*aplico media querys para todo el proyecto en mis puntos de quiebre*/
 @media screen and (max-width: 700px){
     nav{
@@ -465,6 +483,9 @@ textarea{
         gap: 0.6rem;
         font-size: 8.5px;
         justify-content: center;
+    }
+    .h2, h2 {
+        font-size: 12px;
     }
     header{
         width: 100% ;
@@ -614,6 +635,8 @@ textarea{
         box-sizing: border-box;
         width: 300px;
     }/*ver nutri*/
+    .nosotros-imagen{
+        height: 100%;
 }
 @media screen and (max-width: 1000px){
     .formulario{
