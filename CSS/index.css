@@ -217,7 +217,7 @@ textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
-    min-width: 100%;
+    min-width: 95%;
 }
 .formulario-contenido-botones{
     border-radius: 7px;
@@ -448,7 +448,7 @@ textarea{
     border-radius: 10px;
 }
 .formularionutri-contenido-input{
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: content-box;
@@ -483,6 +483,7 @@ textarea{
         gap: 0.6rem;
         font-size: 8.5px;
         justify-content: center;
+        margin-top: 10px;
     }
     .h2, h2 {
         font-size: 12px;
@@ -604,6 +605,7 @@ textarea{
         padding: 2px;
         box-sizing: content-box;
         border-radius: 10px;
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 1080px){
@@ -637,6 +639,7 @@ textarea{
     }/*ver nutri*/
     .nosotros-imagen{
         height: 100%;
+    }
 }
 @media screen and (max-width: 1000px){
     .formulario{
