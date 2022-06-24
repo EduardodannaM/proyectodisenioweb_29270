@@ -1,0 +1,85 @@
+#Grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "img1 texto1"
+    "img2 texto2";
+    .nota-titulo{
+        grid-area: titulo;
+        text-align: center;
+        font-size: 30px;
+        border-bottom: 2.5px solid brown;
+        color: rgb(10, 10, 10);
+    }
+    .nota1{
+        grid-area: img1;
+        .nota-imagen{
+            grid-area: nota-imagen;
+            border: 3px solid black;
+            box-sizing: border-box;
+            padding: 4px;
+            margin: 1rem;
+            transition: transform .6s;
+            &:hover{
+                transform: scaleX(1.01);
+            }
+        }
+    }
+    .nota-texto1{
+        grid-area: texto1;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;
+        .nota-texto-subtitulo1{
+            text-align: center;
+            font-size: 25px;
+            color: black;
+            border-bottom: 1.5px solid brown;
+            background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
+        }
+        .nota-texto-contenido1{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        .notas-beneficios1{
+            font-size: 15px;
+            color: black;
+        }
+    }
+    .nota2{
+        grid-area: img2; 
+        .nota-imagen2{
+            box-sizing: border-box;
+            border: 3px solid black;
+            padding: 4px;
+            margin: 1rem;
+            transition: transform .6s;
+            &:hover{
+                transform: scaleX(1.01);
+            }
+        }  
+    }
+    .nota-texto2{
+        grid-area: texto2;
+        font-size: 15px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;
+        .nota-texto-subtitulo2{
+            font-size: 25px;
+            border-bottom: 1.5px solid brown;
+            text-align: center;
+            background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
+        }
+        .nota-texto-contenido2{
+            text-align: center;
+            font-size: 15px;
+            color: black; 
+        }
+        .nota-beneficios2{
+            font-size: 15px;
+            color: black;
+        }
+    }
+}

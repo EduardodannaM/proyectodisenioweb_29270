@@ -1,0 +1,106 @@
+/*partials*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  padding: 0px;
+  list-style-type: none;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 0; }
+  .menu .menu-item {
+    border: 2px hidden black;
+    transition: all 0.5s ease; }
+    .menu .menu-item:hover {
+      background-color: rgba(243, 94, 94, 0.719);
+      padding: 3px 7px;
+      border-radius: 7px; }
+
+.footer-texto {
+  display: flex;
+  justify-content: center; }
+
+.footer-copyrhigt {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap; }
+
+.footer-redes {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0px;
+  gap: 1rem; }
+
+.footer-redes .footer-iconos-redes {
+  display: inline-block;
+  border: 2px hidden #9c0e0e; }
+
+/*views*/
+#Grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "img1 texto1" "img2 texto2"; }
+  #Grid .nota-titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2.5px solid brown;
+    color: #0a0a0a; }
+  #Grid .nota1 {
+    grid-area: img1; }
+    #Grid .nota1 .nota-imagen {
+      grid-area: nota-imagen;
+      border: 3px solid black;
+      box-sizing: border-box;
+      padding: 4px;
+      margin: 1rem;
+      transition: transform .6s; }
+      #Grid .nota1 .nota-imagen:hover {
+        transform: scaleX(1.01); }
+  #Grid .nota-texto1 {
+    grid-area: texto1;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem; }
+    #Grid .nota-texto1 .nota-texto-subtitulo1 {
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      border-bottom: 1.5px solid brown;
+      background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
+    #Grid .nota-texto1 .nota-texto-contenido1 {
+      text-align: center;
+      font-size: 15px;
+      color: black; }
+    #Grid .nota-texto1 .notas-beneficios1 {
+      font-size: 15px;
+      color: black; }
+  #Grid .nota2 {
+    grid-area: img2; }
+    #Grid .nota2 .nota-imagen2 {
+      box-sizing: border-box;
+      border: 3px solid black;
+      padding: 4px;
+      margin: 1rem;
+      transition: transform .6s; }
+      #Grid .nota2 .nota-imagen2:hover {
+        transform: scaleX(1.01); }
+  #Grid .nota-texto2 {
+    grid-area: texto2;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem; }
+    #Grid .nota-texto2 .nota-texto-subtitulo2 {
+      font-size: 25px;
+      border-bottom: 1.5px solid brown;
+      text-align: center;
+      background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
+    #Grid .nota-texto2 .nota-texto-contenido2 {
+      text-align: center;
+      font-size: 15px;
+      color: black; }
+    #Grid .nota-texto2 .nota-beneficios2 {
+      font-size: 15px;
+      color: black; }
