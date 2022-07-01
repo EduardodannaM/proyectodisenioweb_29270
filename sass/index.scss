@@ -1,6 +1,17 @@
+/*misc*/
+/*normalize*/
+@import "./misc/normalize";
+/*variables*/
+@import "./misc/variables";
+
 /*partials*/
 @import "./partials/header";
 @import "./partials/footer"; 
 
 /*views*/
 @import "./views/home";
+@import "./views/contacto";
+@import "./views/nosotros";
+@import "./views/nutricion";
+@import "./views/sedes";
+@import "./views/servicios";

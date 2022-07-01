@@ -1,43 +1,113 @@
+/*misc*/
+/*normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  width: 100%; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%; }
+
+/*variables*/
+:root {
+  /*colors*/
+  --primary:  rgba(138, 135, 135, 0.24);
+  --nav-color:  rgb(43, 42, 42);
+  --titulo-color: crimson;
+  --subtitulo-color: brown;
+  --texto-color:   rgb(54, 53, 53);
+  /*spacings*/
+  --sapacing-large: 6rem;
+  --sapacing-medium: 2.4rem;
+  --sapacing-small: 2rem;
+  /*font-sizes*/
+  --text-large: 5.2em;
+  --text-medium: 2.4em;
+  --text-base: 1.6em;
+  --text-small: 1.4em; }
+
 /*partials*/
-.menu {
-  display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  padding: 0px;
-  list-style-type: none;
-  gap: 1.2rem;
-  align-items: center;
-  margin-bottom: 0; }
-  .menu .menu-item {
-    border: 2px hidden black;
-    transition: all 0.5s ease; }
-    .menu .menu-item:hover {
-      background-color: rgba(243, 94, 94, 0.719);
-      padding: 3px 7px;
-      border-radius: 7px; }
+header {
+  background-color: rgba(138, 135, 135, 0.24);
+  width: 100%;
+  padding: 1rem; }
+  header nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around; }
+    header nav .menu {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      padding: 0px;
+      list-style-type: none;
+      gap: 1.2rem;
+      align-items: center;
+      margin-bottom: 0; }
+      header nav .menu .menu-item {
+        border: 2px hidden black;
+        transition: all 0.5s ease; }
+        header nav .menu .menu-item:hover {
+          background-color: rgba(243, 94, 94, 0.719);
+          padding: 3px 7px;
+          border-radius: 7px; }
 
-.footer-texto {
-  display: flex;
-  justify-content: center; }
-
-.footer-copyrhigt {
+footer {
+  background-color: rgba(138, 135, 135, 0.24);
   display: flex;
   flex-direction: column;
-  align-content: space-around;
-  flex-wrap: wrap; }
-
-.footer-redes {
-  display: flex;
-  list-style-type: none;
+  width: 100%;
   justify-content: center;
-  padding: 0px;
-  gap: 1rem; }
-
-.footer-redes .footer-iconos-redes {
-  display: inline-block;
-  border: 2px hidden #9c0e0e; }
+  font-size: 20px; }
+  footer .footer-texto {
+    display: flex;
+    justify-content: center; }
+  footer .footer-copyrhigt {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap; }
+  footer .footer-redes {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0px;
+    gap: 1rem; }
+  footer .footer-redes .footer-iconos-redes {
+    display: inline-block;
+    border: 2px hidden #9c0e0e; }
 
 /*views*/
+.bienvenida {
+  text-align: center;
+  color: var(--titulo-color); }
+
+.banner-content {
+  margin: auto;
+  width: 100%;
+  height: 450px;
+  padding: 0; }
+
+.d-block {
+  object-fit: cover; }
+
 #Grid {
   display: grid;
   grid-template-areas: "titulo titulo" "img1 texto1" "img2 texto2"; }
@@ -46,7 +116,7 @@
     text-align: center;
     font-size: 30px;
     border-bottom: 2.5px solid brown;
-    color: #0a0a0a; }
+    color: var(--subtitulo-color); }
   #Grid .nota1 {
     grid-area: img1; }
     #Grid .nota1 .nota-imagen {
@@ -66,16 +136,16 @@
     #Grid .nota-texto1 .nota-texto-subtitulo1 {
       text-align: center;
       font-size: 25px;
-      color: black;
+      color: var(--subtitulo-color);
       border-bottom: 1.5px solid brown;
       background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
     #Grid .nota-texto1 .nota-texto-contenido1 {
       text-align: center;
       font-size: 15px;
-      color: black; }
+      color: var(--texto-color); }
     #Grid .nota-texto1 .notas-beneficios1 {
       font-size: 15px;
-      color: black; }
+      color: var(--subtitulo-color); }
   #Grid .nota2 {
     grid-area: img2; }
     #Grid .nota2 .nota-imagen2 {
@@ -96,11 +166,228 @@
       font-size: 25px;
       border-bottom: 1.5px solid brown;
       text-align: center;
+      color: var(--subtitulo-color);
       background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
     #Grid .nota-texto2 .nota-texto-contenido2 {
       text-align: center;
       font-size: 15px;
-      color: black; }
+      color: var(--texto-color); }
     #Grid .nota-texto2 .nota-beneficios2 {
       font-size: 15px;
-      color: black; }
+      color: var(--texto-color); }
+
+.formulario {
+  font-size: 30px;
+  text-align: center;
+  background-image: url(../Img/Nosotros.jpg);
+  background-size: 100vw, 100vh;
+  background-attachment: fixed; }
+  .formulario .formulario-contenido {
+    margin: auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px; }
+    .formulario .formulario-contenido .formulario-contenido-input {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      border: none; }
+    .formulario .formulario-contenido .formulario-contenido-botones {
+      border-radius: 7px;
+      background: #8990f3e8;
+      font-size: 20px; }
+
+.titulonosotros {
+  font-size: 25px;
+  text-align: center;
+  color: var(--titulo-color);
+  border-bottom: 2px solid rgba(177, 175, 175, 0.856); }
+
+#nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+  #nosotros .nosotros-imagen {
+    width: 45%;
+    border: 2px solid black;
+    text-align: left;
+    padding: 4px; }
+  #nosotros .nosotros-texto {
+    font-size: 20px;
+    width: 45%;
+    border: 2px hidden black;
+    padding: 4px;
+    color: var(--texto-color); }
+
+.mainnutri {
+  background-color: rgba(183, 223, 238, 0.548);
+  width: 100%; }
+  .mainnutri .titulo {
+    font-size: 30px;
+    color: var(--titulo-color);
+    text-align: center; }
+
+#tipsnutri {
+  display: grid;
+  grid-template-areas: "video formulario";
+  padding: 15px;
+  margin: 1rem; }
+  #tipsnutri .especialista {
+    grid-area: video;
+    padding: 10px;
+    margin: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px; }
+    #tipsnutri .especialista .especialista-titulo {
+      color: var(--subtitulo-color);
+      border-bottom: 2px solid burlywood; }
+    #tipsnutri .especialista .especialista-video {
+      width: 400px;
+      height: 300px;
+      padding: 3px;
+      justify-content: center; }
+  #tipsnutri .formularionutri {
+    font-size: 20px;
+    grid-area: formulario;
+    margin: 4px;
+    padding: 10px;
+    box-sizing: border-box; }
+    #tipsnutri .formularionutri .formularionutri-contenido {
+      margin: auto;
+      width: 400px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      box-sizing: content-box;
+      border-radius: 10px; }
+      #tipsnutri .formularionutri .formularionutri-contenido .formularionutri-contenido-btn {
+        border-radius: 7px;
+        color: white;
+        background: rgba(202, 199, 199, 0.2);
+        font-size: 15px; }
+      #tipsnutri .formularionutri .formularionutri-contenido .formularionutri-contenido-input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: content-box;
+        border: none; }
+
+.sedes {
+  display: grid;
+  grid-template-areas: "godoycruz ciudad" "lujan maipu";
+  font-size: 20px;
+  text-align: center; }
+  .sedes .sedes-box1 {
+    grid-area: godoycruz;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate; }
+    .sedes .sedes-box1:hover {
+      background-color: rgba(243, 94, 94, 0.719);
+      padding: 3px 7px;
+      border-radius: 7px;
+      box-sizing: border-box; }
+  .sedes .sedes-box2 {
+    grid-area: ciudad;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate; }
+    .sedes .sedes-box2:hover {
+      background-color: rgba(243, 94, 94, 0.719);
+      padding: 3px 7px;
+      border-radius: 7px;
+      box-sizing: border-box; }
+  .sedes .sedes-box3 {
+    grid-area: lujan;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate; }
+    .sedes .sedes-box3:hover {
+      background-color: rgba(243, 94, 94, 0.719);
+      padding: 3px 7px;
+      border-radius: 7px;
+      box-sizing: border-box; }
+  .sedes .sedes-box4 {
+    grid-area: maipu;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 2px solid chocolate; }
+    .sedes .sedes-box4:hover {
+      background-color: rgba(243, 94, 94, 0.719);
+      padding: 3px 7px;
+      border-radius: 7px;
+      box-sizing: border-box; }
+  .sedes .sede-titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--titulo-color);
+    border-bottom: 2px solid slategray; }
+
+#servicios-ofrecidos {
+  width: 100%;
+  font-size: 20px;
+  display: grid;
+  grid-template-areas: "crosfit gym" "funcional nutricion" "yoga personalizados";
+  box-sizing: border-box;
+  justify-content: space-around; }
+  #servicios-ofrecidos .servicios-ofrecidos-1 {
+    grid-area: crosfit;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-2 {
+    grid-area: gym;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-3 {
+    grid-area: funcional;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-4 {
+    grid-area: nutricion;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-5 {
+    grid-area: yoga;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-6 {
+    grid-area: personalizados;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 1rem;
+    border: 3px solid black; }
+  #servicios-ofrecidos .servicios-ofrecidos-titulo {
+    text-align: center;
+    font-size: 14px;
+    color: var(--subtitulo-color);
+    border-bottom: 2px solid brown; }
+
+.servicios-titulo {
+  display: flex;
+  justify-content: center;
+  color: var(--titulo-color);
+  border-bottom: 2px solid brown;
+  font-size: 30px; }

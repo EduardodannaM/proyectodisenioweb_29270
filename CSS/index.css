@@ -1,17 +1,50 @@
-header{
-    background-color: rgba(138, 135, 135, 0.24);
-    width: 100%;
-    padding: 1rem;
+:root {
+    /*colors*/
+    --primary:  rgba(138, 135, 135, 0.24);
+    --nav-color:  rgb(43, 42, 42);
+    --titulo-color: crimson;
+    --subtitulo-color: brown;
+    --texto-color:   rgb(54, 53, 53);
+    /*spacings*/
+    --sapacing-large: 6rem;
+    --sapacing-medium: 2.4rem;
+    --sapacing-small: 2rem;
+    /*font-sizes*/
+    --text-large: 5.2em;
+    --text-medium: 2.4em;
+    --text-base: 1.6em;
+    --text-small: 1.4em;
 }
+/*normalize*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color: var(--nav-color);
 }
 body{
     width: 100%;
 }
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+header{
+    background-color: var(--primary);
+    width: 100%;
+    padding: 1rem;
+}
 footer{
-    background-color: rgba(138, 135, 135, 0.24);
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -46,7 +79,7 @@ nav{
     }
 .bienvenida{
     text-align: center;
-    color: rgba(114, 114, 248, 0.89);
+    color: var(--titulo-color);
 }
 .banner-content{
     margin: auto; 
@@ -68,7 +101,8 @@ nav{
       text-align: center;
       font-size: 30px;
       border-bottom: 2.5px solid brown;
-      color: #0a0a0a; }
+      color: var(--subtitulo-color);
+    }
     #Grid .nota1 {
       grid-area: img1; }
       #Grid .nota1 .nota-imagen {
@@ -88,16 +122,16 @@ nav{
       #Grid .nota-texto1 .nota-texto-subtitulo1 {
         text-align: center;
         font-size: 25px;
-        color: black;
+        color: var(--subtitulo-color);
         border-bottom: 1.5px solid brown;
         background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
       #Grid .nota-texto1 .nota-texto-contenido1 {
         text-align: center;
         font-size: 15px;
-        color: black; }
+        color: var(--texto-color); }
       #Grid .nota-texto1 .notas-beneficios1 {
         font-size: 15px;
-        color: black; }
+        color: var(--subtitulo-color); }
     #Grid .nota2 {
       grid-area: img2; }
       #Grid .nota2 .nota-imagen2 {
@@ -118,14 +152,15 @@ nav{
         font-size: 25px;
         border-bottom: 1.5px solid brown;
         text-align: center;
+        color: var(--subtitulo-color);
         background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue); }
       #Grid .nota-texto2 .nota-texto-contenido2 {
         text-align: center;
         font-size: 15px;
-        color: black; }
+        color: var(--texto-color); }
       #Grid .nota-texto2 .nota-beneficios2 {
         font-size: 15px;
-        color: black; }
+        color: var(--texto-color); }
 /*acomodo footer*/
 .footer-texto {
     display: flex;
@@ -169,12 +204,7 @@ nav{
     box-sizing: border-box;
     border: none;
 }
-textarea{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-    min-width: 100%;
-}
+
 .formulario-contenido-botones{
     border-radius: 7px;
     background: #8990f3e8;
@@ -226,7 +256,7 @@ textarea{
 .servicios-titulo{
     display: flex;
     justify-content: center;
-    color: crimson;
+    color: var(--titulo-color);
     border-bottom: 2px solid brown;
     font-size: 30px;
 }
@@ -244,17 +274,14 @@ textarea{
 .servicios-ofrecidos-titulo{
     text-align: center;
     font-size: 14px;
-    color: darkgoldenrod;
+    color: var(--subtitulo-color);
     border-bottom: 2px solid brown;
 }
 /*nosotros*/
-.mainnosotros{
-    background-color: rgba(233, 224, 128, 0.932);
-}
 .titulonosotros{
     font-size: 25px;
     text-align: center;
-    color: rgb(112, 111, 111);
+    color: var(--titulo-color);
     border-bottom: 2px solid rgba(177, 175, 175, 0.856);
 }
 #nosotros{
@@ -279,6 +306,7 @@ textarea{
     border: 2px hidden black;
     /*display: inline-block;*/
     padding: 4px;
+    color: var(--texto-color);
 }
 /*sedes*/
 .sedes{
@@ -342,15 +370,11 @@ textarea{
     border-radius: 7px;
     box-sizing: border-box;
 }
-.sedes-box-titulos{
-    font-size: 15px;
-    color: brown;
-}
 .sede-titulo{
     display: flex;
     justify-content: center;
     font-size: 25px;
-    color: rgb(114, 151, 114);
+    color: var(--titulo-color);
     border-bottom: 2px solid slategray;
 }
 /*nutricion*/
@@ -360,7 +384,7 @@ textarea{
 }
 .titulo{
     font-size: 30px;
-    color: rgb(95, 93, 93);
+    color: var(--titulo-color);
     text-align: center;
 }
 #tipsnutri{
@@ -379,7 +403,7 @@ textarea{
     font-size: 20px;
 }
 .especialista-titulo{
-    color: brown;
+    color: var(--subtitulo-color);
     border-bottom: 2px solid burlywood;
 }
 .especialista-video{

@@ -1,0 +1,27 @@
+.formulario{
+    font-size: 30px;
+    text-align: center;
+    background-image: url(../Img/Nosotros.jpg);
+    background-size: 100vw, 100vh;
+    background-attachment: fixed;
+    .formulario-contenido{
+        margin: auto;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .formulario-contenido-input{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            border: none;
+        }
+        .formulario-contenido-botones{
+            border-radius: 7px;
+            background: #8990f3e8;
+            font-size: 20px;
+        }
+    }
+}

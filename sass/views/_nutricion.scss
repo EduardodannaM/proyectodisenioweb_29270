@@ -1,0 +1,64 @@
+.mainnutri{
+    background-color: rgba(183, 223, 238, 0.548);
+    width: 100%;
+    .titulo{
+        font-size: 30px;
+        color: var(--titulo-color);
+
+        text-align: center;
+    }
+}
+#tipsnutri{
+    display:grid;
+    grid-template-areas: 
+    "video formulario";
+    padding: 15px;
+    margin: 1rem;
+    .especialista{
+        grid-area: video;
+        padding: 10px;
+        margin: 4px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 20px;
+        .especialista-titulo{
+            color: var(--subtitulo-color);
+            border-bottom: 2px solid burlywood;
+        }
+        .especialista-video{
+            width: 400px;
+            height: 300px;
+            padding: 3px;
+            justify-content: center;
+        }
+    }
+    .formularionutri{
+        font-size: 20px;
+       grid-area: formulario;
+        margin: 4px;
+        padding: 10px;
+        box-sizing: border-box;
+        .formularionutri-contenido{
+            margin: auto;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            box-sizing: content-box;
+            border-radius: 10px;
+            .formularionutri-contenido-btn{
+                border-radius: 7px;
+                color: white;
+                background: rgba(202, 199, 199, 0.2);
+                font-size: 15px;
+            }
+            .formularionutri-contenido-input{
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 7px;
+                box-sizing: content-box;
+                border: none;
+            }
+        }
+
+    }
+}

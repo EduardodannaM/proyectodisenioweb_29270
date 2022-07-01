@@ -1,3 +1,16 @@
+.bienvenida{
+    text-align: center;
+    color: var(--titulo-color);
+}
+.banner-content{
+    margin: auto; 
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}
+.d-block {
+    object-fit: cover;
+}
 #Grid{
     display: grid;
     grid-template-areas: 
@@ -9,7 +22,7 @@
         text-align: center;
         font-size: 30px;
         border-bottom: 2.5px solid brown;
-        color: rgb(10, 10, 10);
+        color: var(--subtitulo-color);
     }
     .nota1{
         grid-area: img1;
@@ -33,18 +46,18 @@
         .nota-texto-subtitulo1{
             text-align: center;
             font-size: 25px;
-            color: black;
+            color: var(--subtitulo-color);
             border-bottom: 1.5px solid brown;
             background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
         }
         .nota-texto-contenido1{
             text-align: center;
             font-size: 15px;
-            color: black;
+            color: var(--texto-color);
         }
         .notas-beneficios1{
             font-size: 15px;
-            color: black;
+            color: var(--subtitulo-color);
         }
     }
     .nota2{
@@ -70,16 +83,17 @@
             font-size: 25px;
             border-bottom: 1.5px solid brown;
             text-align: center;
+            color: var(--subtitulo-color);
             background-image: linear-gradient(rgba(117, 117, 243, 0.808), lightblue);
         }
         .nota-texto-contenido2{
             text-align: center;
             font-size: 15px;
-            color: black; 
+            color: var(--texto-color); 
         }
         .nota-beneficios2{
             font-size: 15px;
-            color: black;
+            color: var(--texto-color);
         }
     }
 }

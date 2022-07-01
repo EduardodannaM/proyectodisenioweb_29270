@@ -1,19 +1,30 @@
-.menu{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    padding: 0px;
-    list-style-type: none;
-    gap: 1.2rem;
-    align-items: center;
-    margin-bottom: 0; 
-    .menu-item{
-        border: 2px hidden black;
-        transition: all 0.5s ease;
-        &:hover{
-        background-color: rgba(243, 94, 94, 0.719);
-        padding: 3px 7px;
-        border-radius: 7px;
-        } 
+header{
+    background-color: rgba(138, 135, 135, 0.24);
+    width: 100%;
+    padding: 1rem;
+    nav{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+            padding: 0px;
+            list-style-type: none;
+            gap: 1.2rem;
+            align-items: center;
+            margin-bottom: 0; 
+            .menu-item{
+                border: 2px hidden black;
+                transition: all 0.5s ease;
+                &:hover{
+                background-color: rgba(243, 94, 94, 0.719);
+                padding: 3px 7px;
+                border-radius: 7px;
+                } 
+            }
+        }
     }
 }
