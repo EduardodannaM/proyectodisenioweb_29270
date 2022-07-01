@@ -1,11 +1,78 @@
+@media screen and (max-width: 500px) {
+    footer{
+        font-size: 15px;
+    }
+    #Grid{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "img1"
+        "texto1"
+        "img2"
+        "texto2";
+    }
+    .nota-titulo {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 30px;
+        border-bottom: 2.5px solid brown;
+        color: rgb(10, 10, 10);
+    }
+    .nota{
+        grid-area: img1;
+        box-sizing: border-box;
+        width: 100%;
+     }
+    .nota2{
+        grid-area: img2;   
+        box-sizing: border-box; 
+    }
+    .nota-texto1{
+        grid-area: texto1;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;        
+    }
+    .nota-texto2{
+        grid-area: texto2;
+        font-size: 15px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        margin: 1rem;
+    }
+    .nota-imagen2{
+        box-sizing: border-box;
+        border: 3px solid black;
+        padding: 4px;
+        margin: 2px;
+        width: 300px;
+    }
+    .nota-imagen{
+        grid-area: nota-imagen;
+        border: 3px solid black;
+        box-sizing: border-box;
+        padding: 4px;
+        margin: 2px;
+        width: 300px;
+    }
+    #tipsnutri .formularionutri .formularionutri-contenido {
+        margin: auto;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.4);
+        justify-content: start;
+        padding: 10px 20px;
+        box-sizing: content-box;
+        border-radius: 10px; }
+}/*
 @media screen and (max-width: 700px){
-    nav{
+    header nav{
        flex-direction: column;
        width: 100%;
        text-align: center;
        font-size: auto;
     }
-    .menu{
+
+    header nav .menu{
         gap: 0.6rem;
         font-size: 8.5px;
         justify-content: center;
@@ -67,71 +134,8 @@
         width: 100%;
         gap: 9px;
     }
+}
 
-}
-@media screen and (max-width: 500px) {
-    #Grid{
-        display: grid;
-        grid-template-areas: 
-        "titulo"
-        "img1"
-        "texto1"
-        "img2"
-        "texto2";
-    }
-    .nota-titulo {
-        grid-area: titulo;
-        text-align: center;
-        font-size: 30px;
-        border-bottom: 2.5px solid brown;
-        color: rgb(10, 10, 10);
-    }
-    .nota{
-        grid-area: img1;
-        box-sizing: border-box;
-        width: 100%;
-     }
-    .nota2{
-        grid-area: img2;   
-        box-sizing: border-box; 
-    }
-    .nota-texto1{
-        grid-area: texto1;
-        box-sizing: border-box;
-        padding-left: 15px;
-        margin: 1rem;        
-    }
-    .nota-texto2{
-        grid-area: texto2;
-        font-size: 15px;
-        box-sizing: border-box;
-        padding-left: 15px;
-        margin: 1rem;
-    }
-    .nota-imagen2{
-        box-sizing: border-box;
-        border: 3px solid black;
-        padding: 4px;
-        margin: 2px;
-        width: 300px;
-    }
-    .nota-imagen{
-        grid-area: nota-imagen;
-        border: 3px solid black;
-        box-sizing: border-box;
-        padding: 4px;
-        margin: 2px;
-        width: 300px;
-    }
-    .formularionutri-contenido{
-        margin: auto;
-        width: 250px;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 2px;
-        box-sizing: content-box;
-        border-radius: 10px;
-    }
-}
 @media screen and (max-width: 1080px){
     #tipsnutri {
         display:grid;
@@ -140,6 +144,7 @@
         "formulario";
         padding: 7px;
         margin: 0.6rem;
+        justify-items: start;
     } 
     .especialista {
         grid-area: video;
@@ -159,13 +164,10 @@
         margin: 4px;
         padding: 10px;
         box-sizing: border-box;
-        width: 300px;
-    }/*ver nutri*/
+    }
     .nosotros-imagen{
         height: 100%;
     }
-}
-@media screen and (max-width: 1000px){
     .formulario{
         font-size: 25px;
         text-align: center;
@@ -183,4 +185,4 @@
         box-sizing: border-box;
         border-radius: 10px;
     }
-}
+}*/

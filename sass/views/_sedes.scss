@@ -5,12 +5,15 @@
     "lujan maipu";
     font-size: 20px;
     text-align: center;
-    .sedes-box1{
-        grid-area: godoycruz;
+    .box{
         box-sizing: border-box;
         padding: 15px;
         margin: 1rem;
         border: 2px solid chocolate;
+    }
+    .sedes-box1{
+        grid-area: godoycruz;
+        @extend .box;
         &:hover{
             background-color: rgba(243, 94, 94, 0.719);
             padding: 3px 7px;
@@ -20,10 +23,7 @@
     }
     .sedes-box2{
         grid-area: ciudad;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 2px solid chocolate;
+        @extend .box;
         &:hover{
             background-color: rgba(243, 94, 94, 0.719);
             padding: 3px 7px;
@@ -33,10 +33,7 @@
     }
     .sedes-box3{
         grid-area: lujan;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 2px solid chocolate;
+        @extend .box;
         &:hover{
             background-color: rgba(243, 94, 94, 0.719);
             padding: 3px 7px;
@@ -46,10 +43,7 @@
     }
     .sedes-box4{
         grid-area: maipu;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 2px solid chocolate;
+        @extend .box;
         &:hover{
             background-color: rgba(243, 94, 94, 0.719);
             padding: 3px 7px;
@@ -57,11 +51,11 @@
             box-sizing: border-box;
         }
     }
-    .sede-titulo{
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-        color: var(--titulo-color);
-        border-bottom: 2px solid slategray;
-    }
+}
+.sede-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--titulo-color);
+    border-bottom: 2px solid slategray;
 }

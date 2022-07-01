@@ -1,3 +1,9 @@
+$estilos:(
+    boxsaiz: border-box,
+    padd: 15px,
+    marg: 1rem,
+    encuadro: 3px solid black,
+);
 #servicios-ofrecidos{
     width: 100%;
     font-size: 20px;
@@ -10,45 +16,46 @@
     justify-content: space-around;
     .servicios-ofrecidos-1{
         grid-area: crosfit;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-2{
         grid-area: gym;
         box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-3{
         grid-area: funcional;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-4{
         grid-area: nutricion;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-5{
         grid-area: yoga;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-6{
         grid-area: personalizados;
-        box-sizing: border-box;
-        padding: 15px;
-        margin: 1rem;
-        border: 3px solid black;
+        box-sizing: map-get($estilos, boxsaiz);
+        padding: map-get($estilos, padd);
+        margin: map-get($estilos, marg);
+        border: map-get($estilos, encuadro);
     }
     .servicios-ofrecidos-titulo{
         text-align: center;

@@ -1,13 +1,9 @@
-.mainnutri{
-    background-color: rgba(183, 223, 238, 0.548);
-    width: 100%;
-    .titulo{
-        font-size: 30px;
-        color: var(--titulo-color);
-
-        text-align: center;
-    }
+.titulo{
+    font-size: 30px;
+    color: var(--titulo-color);
+    text-align: center;
 }
+
 #tipsnutri{
     display:grid;
     grid-template-areas: 
@@ -48,6 +44,7 @@
             .formularionutri-contenido-btn{
                 border-radius: 7px;
                 color: white;
+                border: 1px solid black;
                 background: rgba(202, 199, 199, 0.2);
                 font-size: 15px;
             }

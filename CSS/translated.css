@@ -24,6 +24,20 @@ textarea {
   max-width: 100%;
   min-width: 100%; }
 
+.container-xl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.h2, h2 {
+  font-size: 20px; }
+
 /*variables*/
 :root {
   /*colors*/
@@ -42,6 +56,157 @@ textarea {
   --text-base: 1.6em;
   --text-small: 1.4em; }
 
+/*mediaqueries*/
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: auto; }
+  .menu {
+    gap: 0.6rem;
+    font-size: 8.5px;
+    justify-content: center; }
+  .h2, h2 {
+    font-size: 12px; }
+  header {
+    width: 100%; }
+  .servicios-titulo {
+    font-size: 15px; }
+  #nosotros {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; }
+  .nosotros-texto {
+    font-size: 15px; }
+  .sedes-box1 {
+    width: 100%;
+    padding: 2px;
+    margin: 7px;
+    box-sizing: border-box; }
+  .sedes-box2 {
+    width: 100%;
+    padding: 2px;
+    margin: 7px;
+    box-sizing: border-box; }
+  .sedes-box3 {
+    width: 100%;
+    padding: 2px;
+    margin: 7px;
+    box-sizing: border-box; }
+  .sedes-box4 {
+    width: 100%;
+    padding: 2px;
+    margin: 7px;
+    box-sizing: border-box; }
+  .sedes-box-titulos {
+    font-size: 5px;
+    color: brown; }
+  .sede-titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 15px; }
+  .sedes {
+    font-size: 12px;
+    width: 100%;
+    gap: 9px; } }
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 15px; }
+  #Grid {
+    display: grid;
+    grid-template-areas: "titulo" "img1" "texto1" "img2" "texto2"; }
+  .nota-titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2.5px solid brown;
+    color: #0a0a0a; }
+  .nota {
+    grid-area: img1;
+    box-sizing: border-box;
+    width: 100%; }
+  .nota2 {
+    grid-area: img2;
+    box-sizing: border-box; }
+  .nota-texto1 {
+    grid-area: texto1;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem; }
+  .nota-texto2 {
+    grid-area: texto2;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin: 1rem; }
+  .nota-imagen2 {
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 4px;
+    margin: 2px;
+    width: 300px; }
+  .nota-imagen {
+    grid-area: nota-imagen;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 2px;
+    width: 300px; }
+  #tipsnutri .formularionutri .formularionutri-contenido {
+    margin: auto;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: start;
+    padding: 10px 20px;
+    box-sizing: content-box;
+    border-radius: 10px; } }
+
+@media screen and (max-width: 1080px) {
+  #tipsnutri {
+    display: grid;
+    grid-template-areas: "video" "formulario";
+    padding: 7px;
+    margin: 0.6rem;
+    justify-items: start; }
+  .especialista {
+    grid-area: video;
+    padding: 10px;
+    margin: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%; }
+  .especialista-video {
+    width: 100%; }
+  .formularionutri {
+    font-size: 20px;
+    grid-area: formulario;
+    margin: 4px;
+    padding: 10px;
+    box-sizing: border-box; }
+  .nosotros-imagen {
+    height: 100%; } }
+
+@media screen and (max-width: 1000px) {
+  .formulario {
+    font-size: 25px;
+    text-align: center;
+    background-image: url(../Img/Nosotros.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%; }
+  .formulario-contenido {
+    margin: auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px; } }
+
+/*mixins*/
 /*partials*/
 header {
   background-color: rgba(138, 135, 135, 0.24);
@@ -73,37 +238,18 @@ footer {
   background-color: rgba(138, 135, 135, 0.24);
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   font-size: 20px; }
-  footer .footer-texto {
-    display: flex;
-    justify-content: center; }
-  footer .footer-copyrhigt {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap; }
-  footer .footer-redes {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    padding: 0px;
-    gap: 1rem; }
   footer .footer-redes .footer-iconos-redes {
     display: inline-block;
-    border: 2px hidden #9c0e0e; }
+    order: 2px hidden #9c0e0e; }
 
 /*views*/
 .bienvenida {
   text-align: center;
   color: var(--titulo-color); }
-
-.banner-content {
-  margin: auto;
-  width: 100%;
-  height: 450px;
-  padding: 0; }
 
 .d-block {
   object-fit: cover; }
@@ -227,13 +373,10 @@ footer {
     padding: 4px;
     color: var(--texto-color); }
 
-.mainnutri {
-  background-color: rgba(183, 223, 238, 0.548);
-  width: 100%; }
-  .mainnutri .titulo {
-    font-size: 30px;
-    color: var(--titulo-color);
-    text-align: center; }
+.titulo {
+  font-size: 30px;
+  color: var(--titulo-color);
+  text-align: center; }
 
 #tipsnutri {
   display: grid;
@@ -271,6 +414,7 @@ footer {
       #tipsnutri .formularionutri .formularionutri-contenido .formularionutri-contenido-btn {
         border-radius: 7px;
         color: white;
+        border: 1px solid black;
         background: rgba(202, 199, 199, 0.2);
         font-size: 15px; }
       #tipsnutri .formularionutri .formularionutri-contenido .formularionutri-contenido-input {
@@ -285,56 +429,46 @@ footer {
   grid-template-areas: "godoycruz ciudad" "lujan maipu";
   font-size: 20px;
   text-align: center; }
-  .sedes .sedes-box1 {
-    grid-area: godoycruz;
+  .sedes .box, .sedes .sedes-box1, .sedes .sedes-box2, .sedes .sedes-box3, .sedes .sedes-box4 {
     box-sizing: border-box;
     padding: 15px;
     margin: 1rem;
     border: 2px solid chocolate; }
+  .sedes .sedes-box1 {
+    grid-area: godoycruz; }
     .sedes .sedes-box1:hover {
       background-color: rgba(243, 94, 94, 0.719);
       padding: 3px 7px;
       border-radius: 7px;
       box-sizing: border-box; }
   .sedes .sedes-box2 {
-    grid-area: ciudad;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 1rem;
-    border: 2px solid chocolate; }
+    grid-area: ciudad; }
     .sedes .sedes-box2:hover {
       background-color: rgba(243, 94, 94, 0.719);
       padding: 3px 7px;
       border-radius: 7px;
       box-sizing: border-box; }
   .sedes .sedes-box3 {
-    grid-area: lujan;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 1rem;
-    border: 2px solid chocolate; }
+    grid-area: lujan; }
     .sedes .sedes-box3:hover {
       background-color: rgba(243, 94, 94, 0.719);
       padding: 3px 7px;
       border-radius: 7px;
       box-sizing: border-box; }
   .sedes .sedes-box4 {
-    grid-area: maipu;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 1rem;
-    border: 2px solid chocolate; }
+    grid-area: maipu; }
     .sedes .sedes-box4:hover {
       background-color: rgba(243, 94, 94, 0.719);
       padding: 3px 7px;
       border-radius: 7px;
       box-sizing: border-box; }
-  .sedes .sede-titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    color: var(--titulo-color);
-    border-bottom: 2px solid slategray; }
+
+.sede-titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: var(--titulo-color);
+  border-bottom: 2px solid slategray; }
 
 #servicios-ofrecidos {
   width: 100%;
@@ -351,6 +485,7 @@ footer {
     border: 3px solid black; }
   #servicios-ofrecidos .servicios-ofrecidos-2 {
     grid-area: gym;
+    box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px;
     margin: 1rem;
