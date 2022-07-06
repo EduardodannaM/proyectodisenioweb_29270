@@ -80,30 +80,13 @@
     #nosotros .nosotros-texto{
         font-size: 15px;
     }
-    .sedes-box1{
+    .sedes{
         width: 100%;
-        padding: 2px;
-        margin: 7px;
-        box-sizing: border-box;
     }
-    .sedes-box2{
+    .sedes .box, .sedes .sedes-box1, .sedes .sedes-box2, .sedes .sedes-box3, .sedes .sedes-box4{
         width: 100%;
         padding: 2px;
-        margin: 7px;
-        box-sizing: border-box;
-    }
-
-    .sedes-box3{
-        width: 100%;
-        padding: 2px;
-        margin: 7px;
-        box-sizing: border-box;
-    }
-
-    .sedes-box4{
-        width: 100%;
-        padding: 2px;
-        margin: 7px;
+        margin: 5px;
         box-sizing: border-box;
     }
     .sedes-box-titulos{
@@ -190,5 +173,15 @@
         .formulario .formulario-contenido{
             width: 300px;
         }
+    #tipsnutri .especialista .especialista-video{
+        width: 250px;
+        height: 250px;
+    }
+    .formulario .formulario-contenido .formulario-contenido-input{
+        font-size: 10px;
+    }
+    .formulario .formulario-contenido .formulario-contenido-botones{
+        font-size: 10px;
+    }
 }
 
