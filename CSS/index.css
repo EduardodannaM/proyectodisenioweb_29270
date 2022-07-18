@@ -29,11 +29,16 @@ textarea {
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem; }
 
 .h2, h2 {
   font-size: 20px; }
+
+body {
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  min-height: 100vh; }
 
 /*variables*/
 :root {
@@ -61,19 +66,48 @@ header {
   padding: 1rem; }
   header nav {
     display: flex;
+    height: 80px;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-around; }
+    /*
+        flex-direction: row;
+        justify-content: space-around;*/ }
+    header nav .containermen {
+      display: grid;
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      justify-content: end;
+      align-items: center; }
+      header nav .containermen .logo {
+        position: absolute;
+        padding: 20px 50px; }
+    header nav .checkbtn {
+      font-size: 30px;
+      color: rgba(19, 18, 18, 0.767);
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none; }
+    header nav #check {
+      display: none; }
     header nav .menu {
-      display: flex;
+      display: grid;
+      grid-auto-flow: column;
       flex-direction: row;
+      gap: 1.2rem;
       font-size: 15px;
       padding: 0px;
       list-style-type: none;
-      gap: 1.2rem;
       align-items: center;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      float: right;
+      margin-right: 20px; }
       header nav .menu .menu-item {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
         border: 2px hidden black;
         transition: all 0.5s ease; }
         header nav .menu .menu-item:hover {
@@ -178,6 +212,7 @@ footer {
   .formulario .formulario-contenido {
     margin: auto;
     width: 500px;
+    font-size: 25px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     box-sizing: border-box;
@@ -214,7 +249,7 @@ footer {
     text-align: left;
     padding: 4px; }
   #nosotros .nosotros-texto {
-    font-size: 20px;
+    font-size: 25px;
     width: 45%;
     border: 2px hidden black;
     padding: 4px;
@@ -414,22 +449,45 @@ footer {
     box-sizing: border-box;
     border-radius: 10px; } }
 
-@media screen and (max-width: 700px) {
-  header nav {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-size: auto; }
+@media screen and (max-width: 850px) {
+  /*header nav{/*
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       font-size: auto;
+    }*/
+  .container-xl {
+    margin-top: 5rem; }
+  header nav .checkbtn {
+    display: block;
+    cursor: pointer; }
   header nav .menu {
-    gap: 0.6rem;
-    font-size: 8.5px;
-    justify-content: center; }
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 100px;
+    bottom: 0;
+    background: #ced7df;
+    width: 100%;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  header nav .menu .menu-item {
+    display: block;
+    gap: 0.7rem;
+    margin: 50 px 0;
+    line-height: 30px; }
+    header nav .menu .menu-item:hover {
+      background: none;
+      color: red; }
+  #check:checked ~ .menu {
+    left: 0; }
   .h2, h2 {
     font-size: 12px; }
   header {
     width: 100%; }
   .servicios-titulo {
-    font-size: 10px; }
+    font-size: 12px; }
   .titulonosotros {
     font-size: 15px; }
   #nosotros {
@@ -460,6 +518,8 @@ footer {
 @media screen and (max-width: 500px) {
   footer {
     font-size: 15px; }
+  .h2, h2 {
+    font-size: 10px; }
   #Grid {
     display: grid;
     grid-template-areas: "titulo" "img1" "texto1" "img2" "texto2"; }

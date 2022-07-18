@@ -47,19 +47,47 @@
         border-radius: 10px;
     }
 }
-@media screen and (max-width: 700px){
-    header nav{
+@media screen and (max-width: 850px){
+    /*header nav{/*
        flex-direction: column;
        width: 100%;
        text-align: center;
        font-size: auto;
+    }*/
+    .container-xl{
+        margin-top: 5rem;
+    }
+    header nav .checkbtn{
+        display: block;
+        cursor: pointer;
     }
 
     header nav .menu{
-        gap: 0.6rem;
-        font-size: 8.5px;
-        justify-content: center;
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        top: 100px;
+        bottom: 0;
+        background: #ced7df; 
+        width: 100%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
     }
+    header nav .menu .menu-item{
+        display: block;
+        gap: 0.7rem;
+        margin: 50 px 0;
+        line-height: 30px;
+        &:hover{
+            background: none;
+            color: red;
+        }
+    }
+    #check:checked ~ .menu{
+        left: 0;
+    }
+
     .h2, h2 {
         font-size: 12px;
     }
@@ -67,7 +95,7 @@
         width: 100% ;
     }
     .servicios-titulo{
-        font-size: 10px;
+        font-size: 12px;
     }
     .titulonosotros{
         font-size: 15px;
@@ -108,6 +136,9 @@
 @media screen and (max-width: 500px) {
     footer{
         font-size: 15px;
+    }
+    .h2, h2 {
+        font-size: 10px;
     }
     #Grid{
         display: grid;
@@ -184,4 +215,3 @@
         font-size: 10px;
     }
 }
-

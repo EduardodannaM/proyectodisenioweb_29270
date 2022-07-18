@@ -27,9 +27,14 @@ textarea{
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 .h2, h2 {
     font-size: 20px;
+}
+body{
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    min-height: 100vh;
 }

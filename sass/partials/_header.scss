@@ -4,27 +4,60 @@ header{
     padding: 1rem;
     nav{
         display: flex;
-        width: 100%;
+        height: 80px;
+        width: 100%;/*
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-around;*/
+        .containermen{
+            display: grid;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            justify-content: end;
+            align-items: center;
+            .logo{
+                position: absolute;
+                padding: 20px 50px;
+            }
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: rgba(19, 18, 18, 0.767);
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+
         .menu{
-            display: flex;
+            display: grid;
+            grid-auto-flow: column;
             flex-direction: row;
+            gap: 1.2rem;
             font-size: 15px;
             padding: 0px;
             list-style-type: none;
-            gap: 1.2rem;
             align-items: center;
             margin-bottom: 0; 
+            float:right;
+            margin-right: 20px;
             .menu-item{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
                 border: 2px hidden black;
                 transition: all 0.5s ease;
                 &:hover{
                 background-color: rgba(243, 94, 94, 0.719);
                 padding: 3px 7px;
                 border-radius: 7px;
-                } 
-            }
+                }        
+            }     
         }
     }
 }
